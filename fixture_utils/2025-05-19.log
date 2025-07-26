@@ -1,0 +1,6 @@
+[2025-05-19 23:58:23] 10180:I test_fixture_util.py:22:test_add1: 参数：1，1，期望结果：2
+[2025-05-19 23:58:23] 10180:I test_fixture_util.py:26:test_add1: 结果：2
+[2025-05-19 23:58:23] 10180:I test_fixture_util.py:22:test_add1: 参数：-0.01，0.02，期望结果：0.01
+[2025-05-19 23:58:23] 10180:I test_fixture_util.py:26:test_add1: 结果：0.01
+[2025-05-19 23:58:23] 10180:I test_fixture_util.py:22:test_add1: 参数：10，0.02，期望结果：10.02
+[2025-05-19 23:58:23] 10180:I test_fixture_util.py:26:test_add1: 结果：10.02

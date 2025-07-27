@@ -10,6 +10,7 @@ import yaml
 # 获取项目根目录（即包含 pythoncode 目录的目录）
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(project_root)
+pythoncode_path = os.path.join(project_root, "pythoncode")
 
 def pytest_collection_modifyitems(items):
     """
@@ -24,7 +25,7 @@ def get_datas(level):
     try:
         # safe_load: 把yaml 格式 转成python对象
         # safe_dump: 把python对象 转成yaml格式
-        with open("datas.yml", encoding="utf-8") as f:
+        with open("fixture_utils/datas.yml", encoding="utf-8") as f:
             result = yaml.safe_load(f)
             add_datas = result.get("add").get(level).get('datas')
             add_ids = result.get("add").get(level).get('ids')

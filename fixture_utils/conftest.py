@@ -7,6 +7,8 @@ import sys
 import os
 import yaml
 
+# from pythoncode.calculator import Calculator
+
 # 获取项目根目录（即包含 pythoncode 目录的目录）
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(project_root)
